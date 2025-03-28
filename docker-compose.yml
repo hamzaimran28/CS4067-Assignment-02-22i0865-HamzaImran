@@ -1,0 +1,145 @@
+services:
+  # User Service
+  user-service:
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo-user:27017/user-service
+    depends_on:
+      - mongo-user
+
+  # Event Service
+  event-service:
+    build:
+      context: ./event-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      - MONGO_URI=mongodb://mongo-event:27017/event-service
+    depends_on:
+      - mongo-event
+
+  # Booking Service
+  booking-service:
+    build:
+      context: ./booking-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3002:3002"
+    environment:
+      - MONGO_URI=mongodb://mongo-booking:27017/booking-service
+      - EVENT_SERVICE_URL=http://event-service:3001
+      - PAYMENT_SERVICE_URL=http://payment-service:3003
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq
+    depends_on:
+      - mongo-booking
+      - event-service
+      - payment-service
+      - rabbitmq
+
+  # Payment Service
+  payment-service:
+    build:
+      context: ./payment-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3003:3003"
+    environment:
+      - MONGO_URI=mongodb://mongo-payment:27017/payment-service
+    depends_on:
+      - mongo-payment
+
+  # Notification Service
+  notification-service:
+    build:
+      context: ./notification-service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3004:3004"
+    environment:
+      - MONGO_URI=mongodb://mongo-notification:27017/notification-service
+    depends_on:
+      - mongo-notification
+      - rabbitmq
+
+  # Frontend Service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - user-service
+      - event-service
+      - booking-service
+      - payment-service
+      - notification-service
+
+  # MongoDB containers (one per service for isolation)
+  mongo-user:
+    image: mongo:5
+    container_name: mongo-user
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongo-user:/data/db
+
+  mongo-event:
+    image: mongo:5
+    container_name: mongo-event
+    restart: always
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./data/mongo-event:/data/db
+
+  mongo-booking:
+    image: mongo:5
+    container_name: mongo-booking
+    restart: always
+    ports:
+      - "27019:27017"
+    volumes:
+      - ./data/mongo-booking:/data/db
+
+  mongo-payment:
+    image: mongo:5
+    container_name: mongo-payment
+    restart: always
+    ports:
+      - "27020:27017"
+    volumes:
+      - ./data/mongo-payment:/data/db
+
+  mongo-notification:
+    image: mongo:5
+    container_name: mongo-notification
+    restart: always
+    ports:
+      - "27021:27017"
+    volumes:
+      - ./data/mongo-notification:/data/db
+
+  # RabbitMQ Service
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672" # AMQP port
+      - "15672:15672" # Management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest

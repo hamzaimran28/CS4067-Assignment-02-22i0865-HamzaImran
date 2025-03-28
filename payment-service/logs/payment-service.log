@@ -1,0 +1,10 @@
+[2025-03-02 22:52:52] [Payment Service] [INFO] processPayment: Processing payment for user 67c49a6d206f0234e52df520 of amount 600
+[2025-03-02 22:52:52] [Payment Service] [INFO] processPayment: Payment processed successfully with id: 67c49af4227148e24548d06c
+[2025-03-16 17:29:50] [Payment Service] [INFO] processPayment: Processing payment for user 67c49a6d206f0234e52df520 of amount 100
+[2025-03-16 17:29:50] [Payment Service] [INFO] processPayment: Payment processed successfully with id: 67d6c43eabdc85d5dcce5d15
+[2025-03-16 17:52:47] [Payment Service] [INFO] processPayment: Processing payment for user 67c49a6d206f0234e52df520 of amount 23
+[2025-03-16 17:52:47] [Payment Service] [INFO] processPayment: Payment processed successfully with id: 67d6c99fabdc85d5dcce5d17
+[2025-03-16 18:06:25] [Payment Service] [INFO] processPayment: Processing payment for user 67c49a6d206f0234e52df520 of amount 22
+[2025-03-16 18:06:25] [Payment Service] [INFO] processPayment: Payment processed successfully with id: 67d6ccd1f71facc8b145cef6
+[2025-03-16 18:59:44] [Payment Service] [INFO] processPayment: Processing payment for user 67c49a6d206f0234e52df520 of amount 23
+[2025-03-16 18:59:44] [Payment Service] [INFO] processPayment: Payment processed successfully with id: 67d6d950485121d2273e56a6

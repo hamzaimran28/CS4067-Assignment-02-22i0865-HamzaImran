@@ -1,0 +1,19 @@
+[2025-03-02 22:52:52] [Booking Service] [INFO] createBooking: Creating booking for user 67c49a6d206f0234e52df520 for event 67c49aca9833323a26d978cb
+[2025-03-02 22:52:52] [Booking Service] [INFO] createBooking: Booking created with id: 67c49af46531d89e26ad5fe8
+[2025-03-02 22:52:52] [Booking Service] [INFO] createBooking: Notification sent for booking id: 67c49af46531d89e26ad5fe8
+[2025-03-16 17:29:50] [Booking Service] [INFO] createBooking: Creating booking for user 67c49a6d206f0234e52df520 for event 67c371a01be597a8fb7a9c9c
+[2025-03-16 17:29:50] [Booking Service] [INFO] createBooking: Booking created with id: 67d6c43e15e3b6def82f6934
+[2025-03-16 17:29:50] [Booking Service] [ERROR] publishNotification: Error publishing message - 
+[2025-03-16 17:29:50] [Booking Service] [INFO] createBooking: Notification published for booking id: 67d6c43e15e3b6def82f6934
+[2025-03-16 17:52:47] [Booking Service] [INFO] createBooking: Creating booking for user 67c49a6d206f0234e52df520 for event 67c371a01be597a8fb7a9c9c
+[2025-03-16 17:52:47] [Booking Service] [INFO] createBooking: Booking created with id: 67d6c99f15e3b6def82f6936
+[2025-03-16 17:52:47] [Booking Service] [INFO] publishNotification: Message published to queue: notificationQueue
+[2025-03-16 17:52:47] [Booking Service] [INFO] createBooking: Notification published for booking id: 67d6c99f15e3b6def82f6936
+[2025-03-16 18:06:25] [Booking Service] [INFO] createBooking: Creating booking for user 67c49a6d206f0234e52df520 for event 67c371a01be597a8fb7a9c9c
+[2025-03-16 18:06:25] [Booking Service] [INFO] createBooking: Booking created with id: 67d6ccd197a921d6fb473880
+[2025-03-16 18:06:25] [Booking Service] [INFO] publishNotification: Message published to queue: notificationQueue
+[2025-03-16 18:06:25] [Booking Service] [INFO] createBooking: Notification published for booking id: 67d6ccd197a921d6fb473880
+[2025-03-16 18:59:44] [Booking Service] [INFO] createBooking: Creating booking for user 67c49a6d206f0234e52df520 for event 67c371a01be597a8fb7a9c9c
+[2025-03-16 18:59:44] [Booking Service] [INFO] createBooking: Booking created with id: 67d6d95061e61551b560a8e4
+[2025-03-16 18:59:44] [Booking Service] [INFO] publishNotification: Message published to queue: notificationQueue
+[2025-03-16 18:59:44] [Booking Service] [INFO] createBooking: Notification published for booking id: 67d6d95061e61551b560a8e4

@@ -1,0 +1,7 @@
+[2025-03-02 22:50:37] [User Service] [INFO] registerUser: Attempting to register user with email: hamzaimran28@gmail.com
+[2025-03-02 22:50:37] [User Service] [INFO] registerUser: User registered successfully with id: 67c49a6d206f0234e52df520
+[2025-03-02 23:03:06] [User Service] [INFO] getUserProfile: Fetching user with id: 67c49a6d206f0234e52df520
+[2025-03-02 23:37:38] [User Service] [INFO] registerUser: Attempting to register user with email: khanmu2003@gmail.com
+[2025-03-02 23:37:38] [User Service] [INFO] registerUser: User registered successfully with id: 67c4a572a273ef171d833490
+[2025-03-02 23:38:27] [User Service] [INFO] getUserProfile: Fetching user with id: 67c4a572a273ef171d833490
+[2025-03-16 17:29:01] [User Service] [INFO] getUserProfile: Fetching user with id: 67c49a6d206f0234e52df520

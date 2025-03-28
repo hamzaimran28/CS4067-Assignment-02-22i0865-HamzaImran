@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payments - Event Booking</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Payment Logs</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="createEvent.html">Create Event</a></li>
+            <li><a href="listEvents.html">List Events</a></li>
+            <li><a href="booking.html">Book Event</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="#" id="logoutLink">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="card">
+        <button id="fetchPaymentsBtn" class="btn">Fetch Payment Logs</button>
+        <ul id="paymentsList"></ul>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

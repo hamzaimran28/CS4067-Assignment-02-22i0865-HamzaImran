@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: onlineeventbooking-config
+  namespace: onlineeventbookinghamzaimran
+data:
+  MONGO_URI_USER: "mongodb://mongo-user:27017/user-service"
+  MONGO_URI_EVENT: "mongodb://mongo-event:27017/event-service"
+  MONGO_URI_BOOKING: "mongodb://mongo-booking:27017/booking-service"
+  MONGO_URI_NOTIFICATION: "mongodb://mongo-notification:27017/notification-service"
+  EVENT_SERVICE_URL: "http://event-service:3001"
+  PAYMENT_SERVICE_URL: "http://payment-service:3003"

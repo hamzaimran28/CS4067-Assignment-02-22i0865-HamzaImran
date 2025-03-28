@@ -1,0 +1,12 @@
+[2025-03-02 22:52:10] [Event Service] [INFO] createEvent: Creating event with name: Atif Aslam Concert
+[2025-03-02 22:52:10] [Event Service] [INFO] createEvent: Event created successfully with id: 67c49aca9833323a26d978cb
+[2025-03-02 22:52:28] [Event Service] [INFO] getAllEvents: Fetching all events
+[2025-03-02 22:52:52] [Event Service] [INFO] checkAvailability: Checking availability for event id: 67c49aca9833323a26d978cb
+[2025-03-02 23:03:09] [Event Service] [INFO] getAllEvents: Fetching all events
+[2025-03-02 23:03:21] [Event Service] [INFO] getAllEvents: Fetching all events
+[2025-03-02 23:03:27] [Event Service] [INFO] getAllEvents: Fetching all events
+[2025-03-02 23:03:40] [Event Service] [INFO] getAllEvents: Fetching all events
+[2025-03-16 17:29:50] [Event Service] [INFO] checkAvailability: Checking availability for event id: 67c371a01be597a8fb7a9c9c
+[2025-03-16 17:52:47] [Event Service] [INFO] checkAvailability: Checking availability for event id: 67c371a01be597a8fb7a9c9c
+[2025-03-16 18:06:25] [Event Service] [INFO] checkAvailability: Checking availability for event id: 67c371a01be597a8fb7a9c9c
+[2025-03-16 18:59:44] [Event Service] [INFO] checkAvailability: Checking availability for event id: 67c371a01be597a8fb7a9c9c

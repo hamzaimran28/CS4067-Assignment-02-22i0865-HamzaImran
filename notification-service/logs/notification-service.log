@@ -1,0 +1,12 @@
+[2025-03-02 22:52:52] [Notification Service] [INFO] sendNotification: Sending notification for booking 67c49af46531d89e26ad5fe8 to user 67c49a6d206f0234e52df520 with status CONFIRMED
+[2025-03-02 22:52:52] [Notification Service] [INFO] sendNotification: Notification logged for booking 67c49af46531d89e26ad5fe8
+[2025-03-16 17:27:18] [Notification Service] [INFO] Notification Service running on port 3004
+[2025-03-16 17:27:18] [Notification Service] [ERROR] consumeNotifications: Error in consuming messages - 
+[2025-03-16 18:01:54] [Notification Service] [INFO] Notification Service running on port 3004
+[2025-03-16 18:01:54] [Notification Service] [INFO] consumeNotifications: Waiting for messages in queue: notificationQueue
+[2025-03-16 18:01:54] [Notification Service] [INFO] consumeNotifications: Received message: {"bookingId":"67d6c99f15e3b6def82f6936","userId":"67c49a6d206f0234e52df520","status":"CONFIRMED"}
+[2025-03-16 18:06:25] [Notification Service] [INFO] consumeNotifications: Received message: {"bookingId":"67d6ccd197a921d6fb473880","userId":"67c49a6d206f0234e52df520","status":"CONFIRMED"}
+[2025-03-16 18:58:58] [Notification Service] [INFO] Notification Service running on port 3004
+[2025-03-16 18:58:58] [Notification Service] [INFO] consumeNotifications: Waiting for messages in queue: notificationQueue
+[2025-03-16 18:59:44] [Notification Service] [INFO] consumeNotifications: Received message: {"bookingId":"67d6d95061e61551b560a8e4","userId":"67c49a6d206f0234e52df520","status":"CONFIRMED"}
+[2025-03-16 18:59:44] [Notification Service] [INFO] consumeNotifications: Notification saved for booking 67d6d95061e61551b560a8e4
